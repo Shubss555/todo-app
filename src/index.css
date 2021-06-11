@@ -1,3 +1,5 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,121 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F8F8F8;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main_div{
+  width: 100%;
+  height: 100vh;
+  background-color: #F8F8F8;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.card{
+  background-color: 	#F8F8F8;
+  width: 25%;
+  min-width: 25%;
+  margin: 0 auto;
+  height: 70vh;
+  border-radius: 5%;
+  vertical-align: middle;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 50px;
+  margin-bottom: 30px;
+  min-width: 64px;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+addbtn{
+  margin: 5px 10px;
+  padding: 10px 20px;
+  outline: none;
+  background-color: purple;
+  color: white;
+  border: none;
+}
+.addbtn:hover{
+  color:#2ed573;
+}
+.btn_red:hover{
+  color: #ff4757;
+}
+input{
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid purple;
+  font-size: 20px;
+  width: 60%;
+}
+
+button.MuiButtonBase-root.MuiFab-root.addbutton {
+  margin-left: 15px;
+}
+ol{
+  text-align: left;
+  list-style-type: none;
+  
+}
+li{
+  font-size: 25px;
+  color: purple;
+  width: 70%;
+  margin: 5px;
+}
+svg.MuiSvgIcon-root {
+  font-size: 30px;
+}
+.todo_style{
+  display: flex;
+  padding: 5px;
+}
+.delete_icon:hover{
+   color: red;
+}
+.delete_icon {
+  box-shadow: none;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-text.addbtn {
+  /* background-color: #e0e0e0; */
+  margin: 0px 9px;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.delete_icon {
+  box-shadow: none;
+}
+@media only screen and (max-width:1024px){
+  h1{
+    font-size: 35px;
+  }
+  .card{
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width:768px){
+
+  h1{
+    font-size: 25px;
+  }
+ .card{
+   min-width: 70%;
+ }
 }
